@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transistor Modeling Notes", "Transistor Modeling Notes\Transistor Modeling Notes.csproj", "{A21842BB-5594-465F-B8ED-2C3AD49FB18E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A21842BB-5594-465F-B8ED-2C3AD49FB18E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A21842BB-5594-465F-B8ED-2C3AD49FB18E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A21842BB-5594-465F-B8ED-2C3AD49FB18E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A21842BB-5594-465F-B8ED-2C3AD49FB18E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57753300-90B6-4A07-A002-B7B1CD4E1814}
+	EndGlobalSection
+EndGlobal
