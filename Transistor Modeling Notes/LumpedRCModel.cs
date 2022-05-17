@@ -24,12 +24,14 @@ namespace Transistor_Modeling_Notes
         public static void ExampleRun()
         {
             ExampleProblem exam = new ExampleProblem();
+            Transistor transistor = exam.transistor;
+            Wire wire = exam.wire;
 
             //Calculate transistor resistance
-            double res = TransistorResistorTable.GetTransistorResistance(exam.nmos, exam.vdd, exam.width / exam.length);
+            double res = TransistorResistorTable.GetTransistorResistance(transistor.nmos, transistor.vdd, (transistor.transistorWidth / transistor.transistorLength));
 
             //Calculate Wire Capacitance
-            double cap = CapacitanceTable.GetCapacitanceOfWire(exam.metals, exam.width, exam.length);
+            double cap = CapacitanceTable.GetCapacitanceOfWire(wire.metals, wire.wireWidth, wire.wireLength);
 
             //Print out total propogation for circuit
             double prop = LumpedModelStatic * res * (given_C_diff + cap);

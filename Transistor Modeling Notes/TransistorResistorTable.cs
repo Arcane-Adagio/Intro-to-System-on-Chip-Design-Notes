@@ -63,6 +63,17 @@ namespace Transistor_Modeling_Notes
         {
             /* Class notes: "to get the Req for a trans. with different size (not W/L=1), divide the number from
                     table by the new W/L (or multiply by new L/W) */
+            // This outputs in ohms instead of kilo ohms
+            double res = nmos ? nmosValues[vdd] / WidthByLengthRatio : pmosValues[vdd] / WidthByLengthRatio;
+            return res *= Math.Pow(10, 3); //the table was in kilo ohms
+        }
+
+        public static double GetTransistorResistance(bool nmos, double vdd, double width, double length)
+        {
+            /* Class notes: "to get the Req for a trans. with different size (not W/L=1), divide the number from
+                    table by the new W/L (or multiply by new L/W) */
+            // This outputs in ohms instead of kilo ohms
+            double WidthByLengthRatio = Math.Round((width / length), 2);
             double res = nmos ? nmosValues[vdd] / WidthByLengthRatio : pmosValues[vdd] / WidthByLengthRatio;
             return res *= Math.Pow(10, 3); //the table was in kilo ohms
         }
